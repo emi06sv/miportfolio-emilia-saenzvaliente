@@ -1,0 +1,54 @@
+/* selector universal  */
+* {
+    border: 1px solid rgb(226, 134, 200);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(233, 19, 108);
+}
+/* tag selector */
+h1 {
+   color: hotpink; 
+   text-align: center;
+}
+
+p {
+    color:coral
+}
+/* Background color for the entire page */
+body {
+    background-color: rgb(236, 85, 194);
+}
+/* class selector */
+.texto {
+    background-color: rgb(241, 227, 237);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+/* id selector */
+#test-id {
+    background-color: rgb(236, 212, 228);
+    padding: 20px;
+    border-radius: 15px;
+    width: 40%;
+    margin: 30px auto;
+    text-align: center;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+:hover {
+    color: rgb(228, 141, 141);
+}
+
+/* Centrar la imagen Labial Rojo */
+img[src="Labial Rojo.jpg"],
+img[alt="Labial Rojo"] {
+    display: block;
+    margin: 20px auto;
+}
+/* Centrar la imagen Labial Rosa */
+img[src="Labial Rosa.jpg"],
+img[alt="Labial Rosa"] {
+    display: block;
+    margin: 20px auto;
+}
