@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto | Emilia Saenz Valiente Portfolio</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-<form method= POST action=  https://submit-form.com/TFdfmr0rp>
-    <h1>Forms Emilia</h1>
- <label for=mi_nombre>Nombre:</label>
-
- <input id=mi_nombre type=text name=nombre >
- <input type=submit value=enviar ahora >
-</form>    
+<form method="post" action="https://submit-form.com/TFdfmr0rp">
+<label for="nombre"> Nombre </label>
+<input type="text" name="nombre" id="nombre" autofocus required placeholder="ej: tu nombre">
+<label for="email"> Tu correo </label>
+<input type="email" name="email" id="email" required placeholder="ej: tu-correo@gmail.com"> 
+<label for="clave"> Tu Clave</label>
+<input type="password" name="clave" id="clave" minlength="4" maxlength="32" required placeholder="ej: 12345">
+<input type="submit" value="enviar ahora">
+</form>
 </body>
 </html>
