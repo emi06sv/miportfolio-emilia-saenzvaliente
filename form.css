@@ -1,0 +1,33 @@
+/* selector universal  */
+* {
+    border: 1px solid #c77dff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e0aaff;
+}
+/* tag selector */
+h1 {
+   color: #10002b
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+   text-align: center;
+}
+
+
+.one {
+    color: #3c096c;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.A {
+    color: #3c096c;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #b95eff;
+}
