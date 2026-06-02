@@ -114,16 +114,6 @@ select {
     color: #000;
     font-size: 1rem;
 }
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    margin-top: 0.35rem;
-    padding: 0.65rem;
-    border: 1px solid #3c096c;
-    border-radius: 10px;
-    background-color: #fff;
-    color: #000;
-}
 
 input[type="radio"] {
     display: inline-block;
