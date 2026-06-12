@@ -18,7 +18,7 @@
         <fieldset class="A">
             <legend class="one">Datos de Contacto</legend>
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" autofocus required placeholder="ej: tu nombre" autocomplete="name">
+            <input type="text" name="nombre" id="nombre" autofocus required placeholder="ej: tu nombre" autocomplete="name" pattern="[A-Za-z\s]{5,12}">
             <label for="email">Tu correo</label>
             <input type="email" name="email" id="email" required placeholder="ej: tu-correo@gmail.com" autocomplete="email">
             <label for="telefono">Tu teléfono</label>
@@ -27,21 +27,37 @@
             <input type="password" name="clave" id="clave" minlength="4" maxlength="32" required placeholder="ej: 12345">
             <label for="edad">Tu edad</label>
             <input type="number" id="edad" name="edad" min="18" max="99" required>
+            <label for="nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="nacimiento" name="fecha_nacimiento" required>
             <label for="usuario">Nombre de usuario</label>
             <input type="text" name="usuario" id="usuario" required placeholder="ej: nombredeusuario">
             <label for="pais">País</label>
-            <input type="text" id="pais" name="pais" list="paises" required placeholder="ej: México">
-            <datalist id="paises">
-                <option value="México">
-                <option value="España">
-                <option value="Argentina">
-                <option value="Colombia">
-                <option value="Perú">
-            </datalist>
+                <select id="pais" name="pais" required>
+                    <option value="" disabled selected>Selecciona tu país</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="España">España</option>
+                    <option value="México">México</option>
+                    <option value="Perú">Perú</option>
+                </select>
+
+                <label for="ciudad">Ciudad de residencia</label>
+                <input type="text" id="ciudad" name="ciudad" list="ciudades" required placeholder="ej: Buenos Aires">
+                <datalist id="ciudades">
+                    <option value="Buenos Aires">
+                    <option value="Bogotá">
+                    <option value="Madrid">
+                    <option value="Ciudad de México">
+                    <option value="Lima">
+                </datalist>
             <label>Género</label>
             <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
             <label><input type="radio" name="genero" value="femenino" required> Femenino</label>
             <label><input type="radio" name="genero" value="otro" required> Otro</label>
+            <p>Intereses astrológicos</p>
+                <label><input type="checkbox" name="intereses" value="tarot"> El Tarot</label>
+                <label><input type="checkbox" name="intereses" value="cartas"> Cartas Natales</label>
+                <label><input type="checkbox" name="intereses" value="constelaciones"> Constelaciones</label>
             <label for="bibliografia">Bibliografía</label>
             <textarea id="bibliografia" name="bibliografia" rows="4" cols="50" placeholder="ej: Yo soy..."></textarea>
         </fieldset>
